@@ -1,3 +1,9 @@
+import React from "react";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Login from "./components/Login";
+import Logout from "./components/Logout";
+import Navbar from "./components/Navbar";
+
 import ToDo from "./components/ToDo";
 import debounceThrottle from "./components/debounceThrottle";
 import Timercounter from "./components/Timercounter";
@@ -7,7 +13,16 @@ import ChildToParentInput from "./components/ChildToParentInput";
 import ContextAPI from "./components/ContextAPI";
 import FetchAPI from "./components/FetchAPI";
 function App() {
-
+const appRouter = createBrowserRouter([
+{
+  path:"/",
+  element: <Login/>
+},
+{
+  path:"/logout",
+  element: <Logout/>
+}
+]);
   return (
     <div className="App">
       {/* <ToDo/> */}
@@ -17,7 +32,10 @@ function App() {
       {/* <ChildtoParent/> */}
       {/* <ChildToParentInput/> */}
       {/* <ContextAPI/> */}
-      <FetchAPI/>
+      {/* <FetchAPI/> */}
+
+      <Navbar/>
+      <RouterProvider router={appRouter}/>
     </div>
   );
 }
