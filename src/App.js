@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import ToDo from "./components/ToDo";
+import debounceThrottle from "./components/debounceThrottle";
+import Timercounter from "./components/Timercounter";
+import Capslockonoff from "./components/Capslockonoff";
+import ChildtoParent from "./components/ChildtoParent";
+import ChildToParentInput from "./components/ChildToParentInput";
+import ContextAPI from "./components/ContextAPI";
+import FetchAPI from "./components/FetchAPI";
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <ToDo/> */}
+      {/* <debounceThrottle/> */}
+      {/* <Timercounter/> */}
+      {/* <Capslockonoff/> */}
+      {/* <ChildtoParent/> */}
+      {/* <ChildToParentInput/> */}
+      {/* <ContextAPI/> */}
+      <FetchAPI/>
     </div>
   );
 }
