@@ -12,6 +12,7 @@ import ChildtoParent from "./components/ChildtoParent";
 import ChildToParentInput from "./components/ChildToParentInput";
 import ContextAPI from "./components/ContextAPI";
 import FetchAPI from "./components/FetchAPI";
+import Counter from "./components/Counter";
 function App() {
 const appRouter = createBrowserRouter([
 {
@@ -34,8 +35,9 @@ const appRouter = createBrowserRouter([
       {/* <ContextAPI/> */}
       {/* <FetchAPI/> */}
 
-      <Navbar/>
-      <RouterProvider router={appRouter}/>
+      {/* <Navbar/>
+      <RouterProvider router={appRouter}/> */}
+      <Counter/>
     </div>
   );
 }
